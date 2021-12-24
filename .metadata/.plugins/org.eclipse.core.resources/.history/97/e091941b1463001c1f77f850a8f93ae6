@@ -1,0 +1,21 @@
+package com.test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class temperatureconversion {
+
+	public static void main(String[] args) throws NumberFormatException, IOException  {
+		InputStreamReader in=new InputStreamReader(System.in); //Input Stream Activation
+		BufferedReader ob=new BufferedReader(in);              //Buffer Activation
+		float c, f;
+		System.out.println("Enter value for fahrenheit:");
+		f=Float.parseFloat(ob.readLine());
+		c=(f-32)/9*5;
+		System.out.println("celcius is:" +c);
+
+
+	}
+
+}
